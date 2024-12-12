@@ -12,11 +12,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -27,31 +31,45 @@
 
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0.4fr 1.6fr 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
+            grid-template-columns: 250px 1fr;
+            /* Fixed sidebar (250px) and flexible content */
+            grid-template-rows: 1fr;
+            /* Only one row */
+            gap: 20px;
+            /* Space between columns */
         }
 
         .wordlist {
-            grid-area: 2 / 1 / 4 / 2;
+            grid-column: 1 / 2;
+            /* Place wordlist in the first column */
             position: fixed;
             top: 0;
             left: 0;
             bottom: 0;
+            width: 250px;
+            /* Fixed width for the sidebar */
             overflow-y: auto;
+            font-family: 'Cinzel', serif;
+            font-stretch: condensed;
+            /* Condensing the font */
+            padding: 20px;
+            /* Optional: Add padding to the sidebar */
+        }
+
+        .wordlist ul {
+            list-style-type: none;
+            /* Remove bullets */
+            padding-left: 1%;
+            /* Remove padding on the left */
         }
 
         .definitions {
-            grid-area: 2 / 2 / 4 / 4;
+            grid-column: 2 / 3;
+            /* Place definitions in the second column */
             margin-left: 18%;
-            overflow-y: auto;
             padding: 4%;
-        }
-
-        .definitions {
             background-color: #202020;
-            grid-area: definitions;
+            overflow-y: auto;
         }
 
         .buttonsearchfield {
@@ -100,17 +118,6 @@
     </style>
     <!-- Scroll -->
     <script src="search.js"></script>
-    <script src="smooth-scroll.min.js"></script>
-    <script>
-        smoothScroll.init({
-            selector: "[data-scroll]", // Selector for links (must be a class, ID, data attribute, or element tag)
-            selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-            speed: 1000, // Integer. How fast to complete the scroll in milliseconds
-            easing: "easeInOutCubic", // Easing pattern to use
-            offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-            callback: function (anchor, toggle) { }, // Function to run after scrolling
-        });
-    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.querySelector(".searchfield input");
@@ -143,6 +150,7 @@
                 </div>
             </div>
             <ul>
+                <li><a data-scroll href="#id25">PORTADA.</a></li>
                 <li><a data-scroll href="#id1">AARON.</a></li>
                 <li><a data-scroll href="#id2">AARONICO, SACERDOCIO.</a></li>
                 <li><a data-scroll href="#id3">AARONITAS.</a></li>
@@ -169,6 +177,20 @@
             </ul>
         </div>
         <div class="definitions">
+            <h2 id="id25">DOCTRINA MORMONA</h2>
+            <p>
+                Doctrina Mormona
+                <br><br>
+                Bruce R. McConkie
+                <br><br>
+                Este documento proporciona un índice detallado de términos y conceptos relacionados con la doctrina
+                mormona. El índice contiene más de 200 entradas que van desde "A" para "Aarón" hasta "Z" para
+                "Zoramitas", con definiciones y explicaciones breves de cada término. El propósito del documento es
+                servir como una guía concisa de referencia sobre los principios y creencias fundamentales de la Iglesia
+                de Jesucristo de los Santos de los Últimos Días. Idioma original: Inglés.
+
+            </p>
+            <br><br>
             <h2 id="id1">AARON</h2>
             <p>
                 Ver AARÓNICO SACERDOCIO, AARONITAS, LEVI, MELQUISEDEC, MOISES, OBISPO PRESIDENTE, SACERDOCIO, HIJOS DE
@@ -680,10 +702,10 @@
             <h2 id="id23">EXPIACION DE CRISTO.</h2>
             <p>
                 Ver ABOGADO, DOCTRINA DE LA EXPIACION POR SANGRE, <a href="#id22">CRISTO</a>, VIDA ETERNA, EXPIACION,
-                EXPIADOR, CAIDA DE
-                ADAN, EVANGELIO, GRACIA DE DIOS, INMORTALIDAD, INTERCESION, MEDIACION, PROPICIA- CION, PROPICIADOR,
-                RECONCILIACION, RECONCILIADOR, REDENCION, ARREPENTIMIENTO, SACRIFICIOS, SALVACION, SALVACION POR GRACIA,
-                SIMBOLISMO. Nada, en todo el plan de salvación, se compara de alguna manera en importancia, con el más
+                EXPIADOR, CAIDA DE ADAN, EVANGELIO, GRACIA DE DIOS, INMORTALIDAD, INTERCESION, MEDIACION, PROPICIACION,
+                PROPICIADOR, RECONCILIACION, RECONCILIADOR, REDENCION, ARREPENTIMIENTO, SACRIFICIOS, SALVACION,
+                SALVACION POR GRACIA, SIMBOLISMO. Nada, en todo el plan de salvación, se compara de alguna manera en
+                importancia, con el más
                 trascendental de los sucesos: el sacrificio expiatorio de nuestro Señor. Es la única cosa más importante
                 que haya sucedido en toda la historia de las cosas creadas; es la piedra fundamental sobre la que
                 descansa el evangelio y todas las otras cosas; por cierto, todas "las otras cosas que pertenecen a
