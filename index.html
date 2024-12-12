@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doctrina Mormona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #1f1f1f;
+            color: #dddddd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 1.6fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+        }
+
+        .wordlist {
+            grid-area: 2 / 1 / 4 / 2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            overflow-y: auto;
+        }
+
+        .definitions {
+            grid-area: 2 / 2 / 4 / 4;
+            margin-left: 18%;
+            overflow-y: auto;
+            padding: 4%;
+        }
+
+        .definitions {
+            background-color: #202020;
+            grid-area: definitions;
+        }
+
+        .buttonsearchfield {
+            align-items: center;
+            display: flex;
+        }
+
+        ul li {
+            font-family: 'Cinzel', serif;
+        }
+
+        ul li a {
+            color: rgb(199, 199, 199);
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        ul li a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        p {
+            font-family: 'Merriweather', serif;
+            font-size: 1.2em;
+            line-height: 160%;
+        }
+
+        p a {
+            color: rgb(37, 134, 156);
+        }
+
+        p a:visited {
+            color: rgb(37, 134, 156);
+        }
+
+        p a:hover {
+            color: rgb(57, 176, 202);
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 1.9em;
+        }
+    </style>
+    <!-- Scroll -->
+    <script src="search.js"></script>
+    <script src="smooth-scroll.min.js"></script>
+    <script>
+        smoothScroll.init({
+            selector: "[data-scroll]", // Selector for links (must be a class, ID, data attribute, or element tag)
+            selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+            speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+            easing: "easeInOutCubic", // Easing pattern to use
+            offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+            callback: function (anchor, toggle) { }, // Function to run after scrolling
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.querySelector(".searchfield input");
+            const listItems = document.querySelectorAll(".wordlist ul li");
+
+            searchInput.addEventListener("keyup", function () {
+                const searchTerm = searchInput.value.toLowerCase();
+
+                listItems.forEach(function (item) {
+                    const text = item.textContent.toLowerCase();
+
+                    if (text.includes(searchTerm)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wordlist">
+            <div class="finder">
+                <div class="searchfield">
+                    <input type="text" placeholder="Buscar palabra...">
+                    <button type="submit"><img src="lupa-1.svg" alt="Buscar"></button>
+                </div>
+            </div>
+            <ul>
+                <li><a data-scroll href="#id1">AARON.</a></li>
+                <li><a data-scroll href="#id2">AARONICO, SACERDOCIO.</a></li>
+                <li><a data-scroll href="#id3">AARONITAS.</a></li>
+                <li><a data-scroll href="#id4">ABADON.</a></li>
+                <li><a data-scroll href="#id5">ABISMO.</a></li>
+                <li><a data-scroll href="#id6">ABISMO SIN FIN.</a></li>
+                <li><a data-scroll href="#id7">ABJURACION.</a></li>
+                <li><a data-scroll href="#id8">ABOGADO.</a></li>
+                <li><a data-scroll href="#id9">ABOGAR.</a></li>
+                <li><a data-scroll href="#id10">ABOMINABLE, IGLESIA.</a></li>
+                <li><a data-scroll href="#id11">ABOMINACION DESOLADORA.</a></li>
+                <li><a data-scroll href="#id12">ABOMINACIONES.</a></li>
+                <li><a data-scroll href="#id13">ABRAHAM, CONVENIO DE.</a></li>
+                <li><a data-scroll href="#id14">ABRAHAM, HIJOS DE.</a></li>
+                <li><a data-scroll href="#id15">ABRAHAMICA, DISPENSACION.</a></li>
+                <li><a data-scroll href="#id16">ABRAHAM, SENO DE.</a></li>
+                <li><a data-scroll href="#id17">ABSOLUCION.</a></li>
+                <li><a data-scroll href="#id18">ABSTINENCIA.</a></li>
+                <li><a data-scroll href="#id19">ABUNDANCIA.</a></li>
+                <li><a data-scroll href="#id20">ACEITE.</a></li>
+                <li><a data-scroll href="#id22">CRISTO.</a></li>
+                <li><a data-scroll href="#id21">EVANGELIO.</a></li>
+                <li><a data-scroll href="#id23">EXPIACION DE CRISTO.</a></li>
+            </ul>
+        </div>
+        <div class="definitions">
+            <h2 id="id1">AARON</h2>
+            <p>
+                Ver AARÓNICO SACERDOCIO, AARONITAS, LEVI, MELQUISEDEC, MOISES, OBISPO PRESIDENTE, SACERDOCIO, HIJOS DE
+                MOISES Y DE AARON. A Aarón le corresponde el honor como perpetuo recordatorio a través de todas las
+                generaciones de que su nombre sea usado para identificar el sacerdocio menor, Levítico o Sacerdocio
+                Aarónico. (<a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84?lang=spa"
+                    target="_blank">D.& C. 84</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84?lang=spa#:~:text=18%20Y%20el,conocimiento%20de%20Dios."
+                    target="_blank">18-27</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84?lang=spa#:~:text=107%20Llevad%2C%20pues%2C%20con%20vosotros%20a%20los%20que%20son%20ordenados%20con%20el%20asacerdocio%20menor%2C%20y%20enviadlos%20delante%20de%20vosotros%20para%20fijar%20citas%2C%20preparar%20la%20v%C3%ADa%20y%20cumplir%20con%20los%20compromisos%20que%20vosotros%20mismos%20no%20pod%C3%A1is%20cumplir."
+                    target="_blank">107</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84?lang=spa#:~:text=1%20Una%20revelaci%C3%B3n,de%20la%20divinidad."
+                    target="_blank">1-20</a>.) Como poseedor del Sacerdocio de Melquisedec, Aarón
+                mantuvo una
+                posición prominente de líder entre los élderes. (<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/18?lang=spa#:~:text=12%20Y%20tom%C3%B3%20Jetro%2C%20suegro%20de%20Mois%C3%A9s%2C%20holocaustos%20y%20sacrificios%20para%20Dios%3B%20y%20vino%20Aar%C3%B3n%20y%20todos%20los%20ancianos%20de%20Israel%20a%20comer%20apan%20con%20el%20suegro%20de%20Mois%C3%A9s%20delante%20de%20Dios."
+                    target="_blank">Ex.18:12</a>; <a href="https://www.gutenberg.org/files/46221/46221-h/46221-h.htm"
+                    target="_blank">John Taylor, Items on Priesthood, p. 5</a>.) Por cierto con Moisés, Nadab, Abihu y
+                setenta de los ancianos de Israel, Aarón vio al Dios de Israel antes
+                de la existencia de la orden de Aarón: y cuando "Moisés subió al monte de Dios" Aarón y Hur quedaron en
+                una posición de presidencia sobre los otros ancianos (<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/24?lang=spa"
+                    target="_blank">Ex.24</a>.). Pero cuando los mandamientos de la ley carnal fueron "añadidos" al
+                evangelio "por causa de las
+                transgresiones" entonces Aarón y sus hijos
+                fueron elegidos para llevar este sacerdocio por el cual la ley menor es administrada. (<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/nt/gal/3?lang=spa" target="_blank">Gal.
+                    3</a>.) La posición de Aarón pasó a ser comparable a la del Obispo Presidente de la Iglesia (John
+                Taylor, Items on
+                Priesthood p. 5.) También antes de la institución del Sacerdocio Levítico, Aarón fue elegido por el
+                Señor para actuar como un ministro y un portavoz para Moisés, su hermano menor (<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/4?lang=spa" target="_blank">Ex.
+                    4</a>;<a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/5?lang=spa"
+                    target="_blank">5</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/6?lang=spa" target="_blank">6</a>;
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/7?lang=spa" target="_blank">7</a>;
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/8?lang=spa" target="_blank">8</a>;<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/9?lang=spa" target="_blank">9</a>;
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/10?lang=spa" target="_blank">10</a>
+                ; <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/11?lang=spa"
+                    target="_blank">11</a>, <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/12?lang=spa"
+                    target="_blank">12</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/16?lang=spa"
+                    target="_blank">16</a>).
+                Después del comienzo de la orden del Sacerdocio Aarónico, Aarón y sus hijos
+                fueron ungidos sacerdotes de Israel. (<a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/28?lang=spa" target="_blank">Ex.
+                    28</a>; <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/29?lang=spa"
+                    target="_blank">29</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/30?lang=spa"
+                    target="_blank">30</a>; <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/ot/num/3?lang=spa" target="_blank">Núm.
+                    3</a>; <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/num/4?lang=spa"
+                    target="_blank">4</a>).
+                <br><br>
+                El llamamiento de Aarón permanece como perfecto ejemplo de elección de
+                administradores legales para realizar la obra del Señor; aún desde ese día, la legalidad de la
+                administración sacerdotal ha sido determinada si el ministro profesante era "llamado por
+                Dios, como lo fue Aarón"(Heb. 5:4; D.& C. 27:5; 132:59.) Esto es, por revelación y
+                ordenación y con total aprobación del cuerpo de los verdaderos adoradores del Señor.
+            </p>
+            <br><br>
+            <h2 id="id2">AARONICO, SACERDOCIO.</h2>
+            <p>
+                Ver AARON, AARONITAS, OBISPOS, DIÁCONOS, JUAN EL BAUTISTA,
+                LLAVES, LEY DE MOISES, LEVITAS, MELQUISEDEC SACERDOCIO DE,
+                ORDENACIONES, SACERDOCIO, SACERDOCIO DE ELIAS, OFICIOS DEL
+                SACERDOCIO, QUORUM DEL SACERDOCIO, SACERDOTES, QUORUM DE LOS
+                DOCE, MAESTROS. Cuando el Señor dio la ley de mandamientos carnales, el evangelio
+                preparatorio pala educar a Israel para un tiempo futuro, cuando ellos puedan nuevamente
+                disfrutar de la plenitud del evangelio, hubo la necesidad de conferir una orden menor del
+                sacerdocio para administrar la ley menor (Heb.7:12; Versión Inspirada; Ex. 34: 1-2.)
+                Este sacerdocio menor (D.& C.85:11) fue conferido sobre Aarón y sus hijos (Ex. 28;
+                29; 30; Lev. 1: 11l; 3:2; 13:2; Núm. 18), como "un sacerdocio perpetuo por sus
+                generaciones" (Ex. 40:15; Núm. 25:10-13.) Era también conferido substancialmente sobre
+                todos los de la casa de Leví que estuvieran entre los 30 y 50 años de edad (Núm. 3:4.) Por
+                lo tanto es llamado el Sacerdocio Aarónico o Levítico: los dos nombres son sinónimos
+                (D.& C. 107:1-6).
+                <br><br>
+                Aarón y sus hijos poseyeron las llaves del Sacerdocio Aarónico y actuaron en plena
+                majestad y poder de esta orden Levítica; muchas de sus funciones fueron comparables a
+                aquellas de obispos y sacerdotes de esta dispensación. Sin embargo, el resto de los Levitas
+                ordenados poseyeron la plenitud del sacerdocio Aarónico y participaron en ofrecimientos
+                de sacrificios, pero no tuvieron las llaves del ministerio Aarónico; muchas de sus funciones
+                fueron comparables a las de maestros y diáconos en esta dispensación. (Núm. 3; 4; 2Cro.
+                29; Mat.3: 3; D.& C.13; Doctrina ele Salvación vo1.3 pág.105-107.)
+                Desde Aarón hasta Juan el Bautista la naturaleza hereditaria del Sacerdocio Levítico
+                "estuvo en función activa" (Enseñanzas, pág.390; D.& C.84: 18,26-27,30; 107:13.) Este
+                sacerdocio en ese tiempo era conferido únicamente sobre los miembros dignos de linaje
+                especial escogidos para recibirlo; llegaba a los individuos por descendencia del padre o de
+                la madre, como contraste con el Sacerdocio de Melquisedec que era "sin padre, sin madre,
+                sin descendencia" (Heb.7: 3.) Juan el Bautista "era descendiente de Aarón" y poseyó las
+                llaves del Sacerdocio Aarónico (Enseñanzas, pág.333-334.)
+                Entre los nefitas anteriores al ministerio del Señor resucitado, no había Sacerdocio
+                Aarónico, porque ninguno de la tribu de Leví acompañó al pueblo nefita a su tierra de
+                promisión.
+                <br><br>
+                Pocos miembros de la tribu de Leví se han reunido con la grey de Israel en el meridiano
+                de los tiempos; pocos han vuelto a la grey de sus padres en esta dispensación; y no hubo
+                ninguno entre los nefitas a quienes nuestro Señor ministrara. Consecuentemente,
+                comenzando en los días de la primitiva Iglesia, el Sacerdocio Menor fue esparcido entre el
+                total del pueblo y no fue más confiado exclusivamente a un linaje escogido. Cuando el
+                reino de los últimos días sea perfecto y cuando las otras tribus de Israel sean reunidas y
+                reciban sus bendiciones bajo las manos de Efraín, el primero en reunirse (D.& C.133:
+                26-35), entonces los hijos de Leví se levantarán otra vez en la majestad de su llamado y
+                "de nuevo ofrezcan al Señor un sacrificio en justicia" (DYC.13.) Juan el Bautista como
+                personaje resucitado, vino a José Smith y Oliverio Cowdery el 15 de mayo de 1829, y
+                confirió por primera vez el Sacerdocio Aarónico en esta dispensación (D.& C.13; 27:8.)
+                Desde entonces, como las necesidades del ministerio lo requerían, los oficios de
+                obispo, presbítero, maestro y diácono han sido revelados como parte del ministerio
+                Aarónico.
+                <br><br>
+                El Sacerdocio Aarónico "se llama el sacerdocio menor... porque es una dependencia del
+                mayor, o sea, el Sacerdocio de Melquisedec, y tiene el poder para administrar las
+                ordenanzas exteriores" (D.& C. 107:13-14.) Aunque es un sacerdocio menor, aún es de
+                gran majestad y poder. Tiene "las llaves del ministerio de ángeles" significando que
+                aquellos que lo poseen y son fieles tienen la &#40;llave con la cual pueden abrir las puertas a las
+                visitaciones de mensajeros celestiales, (D.& C.13; 84:26-27; 107:20.) Fe, arrepentimiento
+                y bautismo - como están incluidos en el evangelio preparatorio - caen dentro de su esfera,
+                aunque la imposición de manos por el poder del Espíritu Santo no es una prerrogativa que
+                les competa.
+                <br><br>
+                La perfección no viene por el orden Levítico, y este sacerdocio menor no es recibido
+                con un juramento (Heb. 7:11,21; Enseñanzas pag. 395396.) Pero es un sacerdocio
+                preparatorio, el sacerdocio de Elías, la escuela del ministerio que prepara a sus dignos y
+                fieles ministros, para el juramento y convenio y la perfección pertenecientes al orden del
+                Sacerdocio de Melquisedec. Es evidente que aquellos que se preparan para recibir el
+                Sacerdocio de Melquisedec magnificando sus llamamientos en el Sacerdocio Aarónico,
+                deben ser verídicos, fieles y dignos para recibir finalmente el sacerdocio mayor. En verdad
+                una de las razones por la que el Señor destruyó a Korah y su banda de Levitas era que ellos
+                siendo indignos buscaron "también el sacerdocio mayor". (Vers.insp.Num.16.)
+            </p>
+            <br><br>
+            <h2 id="id3">AARONITAS.</h2>
+            <p>
+                Ver AARON, AARONICO SACERDOCIO, LEVITAS, HIJOS DE MOISES Y
+                AARON. Los descendientes de Aarón especialmente honrados como sacerdotes de Israel,
+                fueron llamados Aaronitas. (1 Crón. 12: 27: 27:17.) Descendencia y pruebas genealógicas
+                de ello, fueron de vital importancia. "Los hijos de los sacerdotes", cuando el templo fue
+                reconstruido en Jerusalén, "éstos buscaron su registro de genealogía, y no fue hallado: y
+                fueron excluidos del sacerdocio" (Esd. 2: 61-63: Neh. 76:63-65.)
+            </p>
+            <br><br>
+            <h2 id="id4">ABADÓN.</h2>
+            <p>
+                Ver APOLIÓN, DESTRUCTOR, DIABLO, INFIERNO. Esta expresión de origen
+                hebreo, fue usada por Juan como un nombre de Satanás (Apo. 9:11). Es lo mismo que el
+                griego Apolión y significa literalmente el Destructor. Fue usado antiguamente para
+                significar infierno como está demostrado en la lectura marginal del Salmo 88:11.
+            </p>
+            <br><br>
+            <h2 id="id5">ABISMO.</h2>
+            <p>
+                Ver ABISMO SIN FIN.
+            </p>
+            <br><br>
+            <h2 id="id6">ABISMO SIN FIN.</h2>
+            <p>
+                Ver ANGEL DEL ABISMO SIN FIN, HADES, INFIERNO, SEOL. En un intento para expresar en un idioma mortal e
+                imperfecto la infinita intensidad de los sufrimientos de los que han sido arrojados al abismo (es decir,
+                al infierno), Juan habló no simplemente del abismo, sino del abismo sin fin. (Apo. 9:1-2, 11; 11:7;
+                17:8; 20:1-3.) El abismo sin fin es la profundidad del infierno. No es un abismo literal, sin fondo pues
+                sería una contradicción en los términos. Si no que es un abismo o prisión en el que los habitantes
+                sufren, tal como los mortales ven al sufrimiento, hasta un extremo infinito, sin límites o sin fin.
+                Refiriéndose a la incapacidad finita de comprender la vastedad del sufrimiento de los que cosechan la
+                total medida de este estado, la revelación dice: "Por consiguiente, no comprenden el fin, la anchura, la
+                altura, la profundidad y miseria del mismo, ni tampoco hombre alguno, sino los que son ordenados a esta
+                condenación." (D. & C: 76:411.)
+            </p>
+            <br><br>
+            <h2 id="id7">ABJURACIÓN.</h2>
+            <p>
+                Ver EXORCISMO.
+            </p>
+            <br><br>
+            <h2 id="id8">ABOGADO.</h2>
+            <p>
+                Ver ABOGAR, EXPIACIÓN DE CRISTO, INTERCESOR, MEDIADOR, PROPICIADOR, RECONCILIADOR. Cristo es él abogado
+                con el Padre, significando que Él suplica en la causa de los justos en las cortes celestiales. (D.& C.
+                29: 5; 32: 3; 62: 1; 110: 4; Moro. 7: 28; 1 Juan 2: 1.) "Escuchad al que es vuestro intercesor con el
+                Padre, que aboga vuestra causa ante Él, diciendo: Padre, ve los padecimientos y la muerte de aquel que
+                no pecó, en quien te complaciste; ve la sangre de tu Hijo que fue derramada, la sangre de aquel que
+                diste para que tú mismo fueses glorificado; por tanto, Padre, perdona a estos mis hermanos que creen en
+                mi nombre, para que vengan a mí, y tengan vida eterna." (D. Y C. 45:3-5.)
+            </p>
+            <br><br>
+            <h2 id="id9">ABOGAR.</h2>
+            <p>
+                Ver ABOGADO, EXPIACIÓN DE CRISTO, EXPIACIÓN, INTERCESIÓN,
+                MEDIACIÓN, PROPICIACIÓN, RECONCILIADOR. Nuestro Señor actúa de acuerdo
+                con la ley de amparo o intercesión abogando la causa de sus santos fieles ante los
+                tribunales de la eternidad. (D. Y C. 45: 3-4.)
+            </p>
+            <br><br>
+            <h2 id="id10">ABOMINABLE, IGLESIA.</h2>
+            <p>
+                Ver IGLESIA DEL DIABLO.
+            </p>
+            <br><br>
+            <h2 id="id11">ABOMINACIÓN DESOLADORA.</h2>
+            <p>
+                Ver ABOMINACIONES, SEGUNDA VENIDA DE CRISTO, SEÑALES DE LOS TIEMPOS. Daniel habló proféticamente de un
+                día cuando hubiera "la abominación desoladora" (Dan. 11:31; 12:11), y la frase es acuñada en tiempos del
+                Nuevo Testamento para decir "la abominación desoladora de que habló el profeta Daniel"(Mat. 24:15.)
+                Aparte de la profética postura confiable en el simple significado de las palabras, podríamos llegar a la
+                conclusión de que esta frase (abominación desoladora) tendría relación con algún gran acto o estado de
+                corrupción e inmundicia, de contaminación e impudicia que traería destrucción, ruinas, devastación y
+                desolación. Tal es el caso. Esta condición de desolación nacida de la abominación e iniquidad,
+                acontecería dos veces en cumplimiento de las palabras de Daniel. La primera fue cuando las legiones
+                romanas bajo el mando de Tito, en 70 a. D.C. sitiaron Jerusalén, destruyendo y dispersando el pueblo, no
+                dejando piedra sobre piedra en el profanado templo y esparciendo terror y devastación como rara vez ha
+                habido igual en la tierra. De aquellos días Moisés había predicho que el rigor del sitio causaría que
+                los padres comiesen a sus hijos y que abundaría la aversión y la maldad ( Deut. 28). Y de los mismos
+                sucesos Nuestro Señor fue inducido a decir "porque en aquellos días vendrá gran tribulación sobre los
+                judíos y sobre los habitantes de Jerusalén, cual Dios jamás ha enviado sobre Israel, desde el comienzo
+                de su reino hasta el día de hoy; no, ni jamás será enviada de nuevo sobre Israel... Y a menos que fuesen
+                acortados esos días no se salvaría ninguna de su carne." (José Smith 1:12-20.)
+                <br><br>
+                Luego, hablando de los últimos días, los días siguientes a la restauración del evangelio y sus
+                declaraciones "como un testigo a todas las naciones" nuestro Señor dijo: "Y de nuevo se cumplirá la
+                abominación de desolación predicha por Daniel el Profeta"(José Smith 1:31-32.) Esto es, Jerusalén estará
+                nuevamente sitiada ("Porque yo reuniré a todas las naciones contra Jerusalén para combatirla").
+                Nuevamente, la severidad del sitio y los extremos del brutal conflicto, nacido de la maldad y de la
+                abominación, regirán la gran devastación y la desolación &#40;" y la ciudad será tomada y serán
+                saqueadas las casas; y violadas las mujeres; y la mitad de la ciudad irá en cautiverio" ( Zac. 14.).
+                Será durante este asedio que Jesucristo vendrá. La maldad será destruida y comenzará cl milenio. En un
+                sentido general, esta expresiva designación, "abominación desoladora" también describe los terrores de
+                los últimos días al ser derramados sobre los malvados, doquiera que ellos puedan estar. Y así para que
+                los honestos de corazón puedan escapar de estas cosas, el Se- ñor envía a sus misioneros para levantar
+                la voz de amonestación, y declarar las gratas nuevas de la restauración, no sea que "la desolación y
+                total supresión" venga sobre ellos. Los élderes están comisionados para reprender en justicia al mundo
+                por todos sus hechos injustos e inmundos, exponiéndoles clara y comprensiblemente la abominación
+                desoladora en los últimos días"(D. y C. 84: 114-117).
+                <br><br>
+                También: "De ir entre los gentiles por la última vez cuando la boca del Señor llame para ligar la ley y
+                sellar el testimonio y preparar a los santos para la hora del juicio que ha de venir; a fin de que sus
+                almas escapen de la ira de Dios, la desolación de abominación que espera a los malvados tanto en este
+                mundo como en el venidero" (D.& C. 88:84.)
+            </p>
+            <br><br>
+            <h2 id="id12">ABOMINACIONES.</h2>
+            <p> Ver ABOMINACIÓN DESOLADORA, IGLESIA DEL DIABLO, SEÑALES DE LOS TIEMPOS, PECADO, MALDAD. Aquellas
+                prácticas que son llamadas abominaciones. Idolatría y cada clase de inmoralidad sexual, por ejemplo,
+                están así clasificadas. (Lev. 18).
+            </p>
+            <br><br>
+            <h2 id="id13">ABRAHAM, CONVENIO DE.</h2>
+            <p>
+                Ver ADOPCIÓN, MATRIMONIO CELESTIAL, HIJOS DEL CONVENIO, CONVENIOS, EXALTACIÓN, REINO DE ISRAEL,
+                ESPERANZA DE ISRAEL, MELQUISEDEC SACERDOCIO, NUEVO Y SEMPITERNO CONVENIO, RESTAURACIÓN DEL EVANGELIO.
+                Abraham recibió primero el evangelio por bautismo (el cual es el convenio de Salvación); luego confirió
+                sobre sí el sacerdocio Mayor y entró en el matrimonio celestial (que es el convenio de Exaltación)
+                ganando por ese me- dio la certeza de que él obtendría progenie eterna; finalmente recibió una promesa
+                de que todas estas bendiciones le serían ofrecidas a toda su posteridad (Abra. 2: 6-11; D. Y C. 132:
+                29-50). En la divina promesa a Abraham estaba incluida la seguridad de que Cristo vendría a través de su
+                linaje y la certeza de que la posteridad de Abraham recibiría cierta preferencia: la tierra prometida
+                como eterna herencia (Abra. 2; Gen. 17; 22: 15-18: Cal. 3).
+                <br><br>
+                Todas estas promesas en conjunto son
+                llamadas el Convenio de Abraham. Este convenio fue renovado con Isaac (Gen. 24:60; 26: 1-4, 24) y
+                nuevamente con Jacob (Gen. 28; 35: 9-13; 48:3-4). Aquellas partes del convenio que pertenecen a la
+                exaltación personal y progreso eterno, son renovadas con cada miembro ele la casa de Israel que entre en
+                el orden eterno del matrimonio celestial; a través de este orden los partícipes pasan a ser herederos de
+                todas las bendiciones de Abraham, Isaac y Jacob ( D.& C. 132; Rom. 9:4; Cal. 3:4.)
+                <br><br>
+                Para cumplir el convenio que Dios hizo con Abraham haciendo particular referencia al hecho de que a su
+                propia posteridad le serían conferidas las bendiciones del evangelio, el sacerdocio, el matrimonio
+                celestial y vida eterna (Abra. 2: 10-11)- una cantidad de sucesos específicos y particulares debían
+                tener lugar en los últimos días. El evangelio debe ser restaurado, el sacerdocio ser conferido
+                nuevamente al hombre, las llaves con el poder de sellamiento dadas nuevamente a los mortales, Israel
+                congregado y el Espíritu Santo ser derramado sobre los Gentiles. Todo esto, por supuesto, ha tenido ya
+                lugar o está en proceso de completarse (1Ne. 14: 5-7; 15: 1220; 19:: 14-17; 22: 3-25; 2Ne. 6: 6-12; 9::
+                1-2; 10: 7-15; 11:5; 29: 1; 3Ne. 15; 20; 21; Éter 13: 1-13.) Este es el día cuando la identidad de
+                aquellos "que son herederos conforme al convenio" (D.& C. 52:2), que son "herederos legales según la
+                carne" (D. Y C. 86: 8-11) es dada a conocer.
+                <br><br>
+                El Señor resucitado proclamó a los Nefitas: "Vosotros sois de la casa de Israel; y sois del convenio que
+                el Padre concertó con vuestros padres, diciendo a Abraham: "y en tu posteridad serán benditas todas las
+                familias de la tierra". Porque el Padre me ha levantado para venir a vosotros primero, y me envió a
+                bendeciros, apartando a cada uno de vosotros de vuestras iniquidades; y esto, porque sois los hijos del
+                convenio -Y después que hayáis sido bendecidos entonces cumplirá el Padre el convenio que hizo con
+                Abraham, diciendo: En tu posteridad serán benditas todas las familias de la tierra hasta el
+                derramamiento del Espíritu Santo sobre los gentiles por medio de mí, y esta bendición a los gentiles los
+                hará más fuertes que todos, por lo que dispersarán a mi pueblo, oh casa de Israel. Y serán un azote al
+                pueblo de esta tierra. No obstante, si cuando hayan recibido la plenitud de mi evangelio, endurecen sus
+                corazones en contra de mí, haré volver sus iniquidades sobre sus propias cabezas, dice el Padre. Y me
+                acordaré del convenio que he hecho con mi pueblo; y he concertado con ellos que los recogería en mi
+                propio y debido tiempo y que otra vez les daría por herencia la tierra de sus padres, que es la tierra
+                de Jerusalén, que para ellos es la tierra prometida para siempre, dice el Padre." ( 3Ne. 20: 25-29.)
+                <br><br>
+                Como una señal -"para que sepáis la época en que estarán a punto de acontecer estas cosas"- el Señor
+                dijo que una nación libre sería establecida en el continente americano, que el evangelio sería
+                restaurado y que aparecería el Libro de Mormón. "Y cuando sucedan estas cosas, de modo que vuestra
+                posteridad empiece a conocerlas, entonces les será por señal, para que sepan que la obra del Padre ha
+                empezado ya, para dar cumplimiento al convenio que ha hecho al pueblo que es la casa de Israel"(3Ne.
+                21.)
+            </p>
+            <br><br>
+            <h2 id="id14">ABRAHAM, HIJOS DE.</h2>
+            <p>
+                Ver ADOPCIÓN, HIJOS DEL CONVENIO, ISRAEL, TRIBUS DE ISRAEL.
+                "Nosotros somos la simiente de Adán" dicen los judíos; y así lo son en sentido literal. Pero
+                en el sentido del evangelio hijos de Abraham son aquellos que hacen las obras de
+                Abraham, porque su sangre por ese medio es lavada y purificada como la de Abraham, y
+                ellos son adoptados en su linaje. (Abra, 2:8-11; D.& C. 84: 33-41; 132: 29-33; Enseñanzas
+                pág. 177.)
+                He aquí, nuestro Señor replicó a los judíos, "Si fueseis los hijos de Abraham, las obras
+                de Abraham haríais... Vosotros hacéis las obras de vuestro padre ...vosotros sois de vuestro
+                padre el diablo, y los deseos de vuestro padre queréis hacer". (Juan 8:31-47.)
+            </p>
+            <br><br>
+            <h2 id="id15">ABRAHÁMICA, DISPENSACIÓN.</h2>
+            <p>
+                Ver DISPENSACIONES
+            </p>
+            <br><br>
+            <h2 id="id16">ABRAHAM, SENO DE.</h2>
+            <p>
+                Ver PARAÍSO, MUNDO DE LOS ESPÍRITUS. Nuestro Señor en la parábola de
+                Lázaro y el hombre rico, usa el término serlo de Abraham para significar el paraíso.
+                Abraham, el amigo de Dios, sin haber sido en ese tiempo resucitado, continuaba su
+                vida en el paraíso de Dios, el mismo lugar al cual fueron los mendigos justos. (Luc. 16: 19-
+                31.) La expresión connota la estrecha integración y armonía que existe entre los justos en
+                la paradisíaca esfera de paz y descanso.
+            </p>
+            <br><br>
+            <h2 id="id17">ABSOLUCIÓN.</h2>
+            <p>
+                Ver PERDÓN.
+            </p>
+            <br><br>
+            <h2 id="id18">ABSTINENCIA.</h2>
+            <p>
+                Ver PALABRA DE SABIDURÍA.
+            </p>
+            <br><br>
+            <h2 id="id19">ABUNDANCIA.</h2>
+            <p>
+                Ver RIQUEZAS.
+            </p>
+            <br><br>
+            <h2 id="id20">ACEITE.</h2>
+            <p>
+                Ver CONSAGRACIÓN DEL ACEITE.
+            </p>
+            <br><br>
+            <h2 id="id18">ABSTINENCIA.</h2>
+            <p>
+                Ver PALABRA DE SABIDURÍA.
+            </p>
+            <br><br>
+            <h2 id="id21">EVANGELIO.</h2>
+            <p>
+                Ver <a href="#id22">CRISTO</a>, DISPENSACION DEL CUMPLIMIENTO DE LOS TIEMPOS, DISPENSACIONES, EXPIACION
+                DE CRISTO, IGLESIA,
+                IGLESIA DE JESUCRISTO DE LOS SANTOS DE LOS ULTIMOS DIAS, LEY DE MOISES, MORMONISMO, NUEVO Y SEMPITERNO
+                CONVENIO, PLAN DE SALVACION, SALVACION PARA LOS MUERTOS, RESTAURACION DEL EVANGELIO, REVELACION, SANTOS,
+                SALVACION, SALVACION DE LOS MUERTOS, SACERDOCIO, SEÑALES DE LOS TIEMPOS, TESTIMONIO, VERDAD. El
+                evangelio de Jesucristo es el plan de salvación. Abarca todas las leyes, principios, doctrinas, ritos,
+                ordenanzas, actos, poderes, autoridades y llaves necesarios para salvar y exaltar a los hombres en el
+                más alto cielo del más allá. Es el convenio de salvación que hace el Señor con los hombres sobre la
+                tierra. Literalmente, evangelio significa buenas nuevas de Dios o la Historia de Dios. Son las buenas
+                nuevas concernientes a Cristo, <a href="#id23">su expiación</a>, el establecimiento de su reino sobre la
+                tierra y una
+                posible herencia futura en su presencia celestial.
+                <br><br>
+                "Y este es el evangelio," registró el Profeta por vía de revelación, "las buenas nuevas, que la voz de
+                los cielos nos testificó. Que vino al mundo, si, Jesús, para ser crucificado por el mundo y llevar los
+                pecados del mundo, y para santificarlo y limpiarlo de toda injusticia; para que por él pudiesen ser
+                salvos todos aquellos a quienes el Padre había puesto en su poder y hecho por él." (D. Y C. 76:40-42.)
+                En su ministerio entre los nefitas después de su resurrección nuestro Señor proclamó: "He aquí, os he
+                dado mi evangelio, y éste es el evangelio que os he dado; que vine al mundo a cumplir la voluntad de mi
+                Padre, porque mi Padre me envió. Y mi Padre me envió para que fuese levantado en la cruz, y que después
+                de ser levantado sobre la cruz, pudiese atraer a mí mismo a todos los hombres, para que así como he sido
+                levantado por los hombres, así también los hombres sean levantados por el Padre, para comparecer ante
+                mí, para ser juzgados por sus obras, ya fueren buenas o malas; y por esta razón he sido levantado; por
+                consiguiente, de acuerdo con el poder del Padre, atraeré a mí mismo a todos los hombres para que sean
+                juzgados según sus obras.
+                <br><br>
+                ¡Y sucederá que cualquiera que se arrepienta y se bautice en mi nombre, será lleno; y si persevera hasta
+                el fin he aquí, yo le tendré por inocente ante mi Padre el día en que me presente para juzgar al mundo.
+                Y aquel que no persevera hasta el fin, éste es el que también es cortado y echado en el fuego, de donde
+                nunca más puede volver, por motivo de la justicia del Padre. Y ésta es la palabra que él ha dado a los
+                hijos de los hombres; y por esta razón él cumple las palabras que ha dado; y no miente, sino que cumple
+                todas sus palabras. Y nada impuro puede entrar en su reino; por tanto, nada entra en su reposo, sino
+                aquellos que han lavado sus vestidos en mi sangre, mediante su fe, el arrepentimiento de todos sus
+                pecados y su fidelidad hasta el fin. Y éste es el mandamiento: Arrepentíos, todos vosotros, extremos de
+                la tierra, y venid a mí y sed bautizados en mi nombre, para que seáis santificados por la recepción del
+                Espíritu Santo, a fin de que en el postrer día podáis presentaros ante mí sin mancha. En verdad, en
+                verdad os digo que éste es mi evangelio." (3 Ne. 27:13-21; D. Y C. 39:5-6.) En sentido más amplio, todas
+                las verdades son parte del evangelio; pues toda verdad es conocida, ordenada por la Deidad y proviene de
+                ella; y toda verdad ayuda al progreso y avance. Pero en el sentido altamente espiritual en que se usa la
+                palabra en las revelaciones, el evangelio tiene que ver con todas las verdades religiosas por medio de
+                las cuales los hombres se pueden santificar y limpiar sus propias almas, alcanzando de esta manera la
+                salvación en los mundos eternos. Primeramente, las verdades del evangelio se hicieron conocer a los
+                hombres en la preexistencia y el progreso alcanzado allí fue logrado por medio de la obediencia a los
+                mismos. Comenzando con Adán, el primer hombre, el Todopoderoso ha dado al hombre, de tiempo en tiempo,
+                dispensaciones del evangelio. En las revelaciones se ha hablado de dos evangelios, según lo ha requerido
+                la ocasión; uno es la plenitud del evangelio eterno (Apo. 14:6; D. Y C. 14:10), y el otro es el
+                evangelio preparatorio (D. Y C. 84:26-27.)
+                <br><br>
+                La plenitud del evangelio son las leyes, doctrinas, ordenanzas, poderes y autoridad necesarios para que
+                el hombre pueda alcanzar la plenitud de la salvación. Los que tienen la plenitud del evangelio no
+                disfrutan necesariamente de la plenitud del conocimiento del evangelio ni comprenden todas las doctrinas
+                del plan de salvación. Pero sí tienen la plenitud del poder del sacerdocio y del sellamiento mediante
+                los cuales los hombres pueden ser sellados a vida eterna. La plenitud del evangelio surge de la plenitud
+                del poder sellador y no de la plenitud del conocimiento del evangelio. Por otro lado el evangelio
+                preparatorio es una porción menor de las verdades salvadoras del Señor; una parte que prepara a los
+                hombres para un día futuro en que podrán recibir la plenitud del evangelio, porción que no es suficiente
+                para sellar a los hombres para vida eterna o para asegurarles una herencia en el mundo celestial; el
+                evangelio preparatorio "es el evangelio de arrepentimiento y de bautismo, y la remisión de pecados, y la
+                ley de los mandamientos carnales." (D. Y C. 84:27.) Es un sistema del evangelio administrado por el
+                Sacerdocio menor o Aarónico. Cuando se tiene el poder que permite conferir el Don del Espíritu Santo, y
+                este poder lo tienen solamente los poseedores del Sacerdocio de Melquisedec, entonces se manifiesta la
+                plenitud del evangelio.
+                <br><br>
+                Juan el Bautista administró el evangelio preparatorio; Cristo vino con la plenitud del Sacerdocio de
+                Melquisedec y restauró la plenitud del evangelio. (Juan 1:26-27; Hechos 19:1-6.) Nuestras revelaciones
+                dicen que el Libro de Mormón posee la plenitud del evangelio. (D. Y C. 20:9; 27:5; 42:12; 135:3.) Esto
+                es verdad ya que el Libro de Mormón es un registro de los tratos de Dios con un pueblo que disfrutó de
+                la plenitud del evangelio, por lo que todas las leyes y principios que llevan a la salvación más alta se
+                encuentran registrados en ese libro. En el mismo sentido la Biblia y Doctrina y Convenios contienen la
+                plenitud del evangelio. Tal como lo expresó el Pres. John Taylor, las escrituras "son simplemente
+                registros, historias, mandamientos, etc. El evangelio es un principio vivo, perdurable, eterno y sin
+                cambio que ha existido junto [coevo] con Dios, y existirá siempre, mientras haya tiempo y eternidad
+                dondequiera se desarrolle y sea manifestada." (Gospel Kingdom, pág. 88.) La plenitud del evangelio no
+                puede ser preservada en la palabra escrita. Las escrituras dan testimonio del evangelio, pero el
+                evangelio mismo consiste en el poder del Sacerdocio y la posesión del don del Espíritu Santo. Así como
+                hay falsos maestros, religiones falsas, profetas falsos y falsos Cristos, también hay evangelios falsos.
+                Pablo proclamó que todos los que predicaban un evangelio que no había sido recibido "por revelación de
+                Jesucristo sea anatema." (Gál. 1:6-12.) En el verdadero evangelio se encuentran siempre las
+                revelaciones, visiones, milagros, señales, apóstoles, profetas y todos los dones del Espíritu y cuando
+                los identificamos habremos hallado el evangelio verdadero. (Marcos 16:14-20.) Donde se encuentren estas
+                señales está el evangelio de Cristo; donde no se hallen estas señales, no está el evangelio de Cristo.
+                "Y si es que la iglesia está edificada sobre mi evangelio, entonces el Padre manifestará sus propias
+                obras en ella. Pero si no está edificada sobre mi evangelio, y está fundada en los hechos de los
+                hombres, o en las obras del diablo, de cierto os digo que gozarán de su obra por un tiempo, y de aquí a
+                poco viene el fin, y son cortados y echados al fuego, de donde no se vuelve." (3 Ne. 27:10-11.) El
+                evangelio verdadero de Jesucristo ha sido restaurado sobre la tierra en los últimos días a través de
+                José Smith. Se encuentra únicamente en la Iglesia de Jesucristo de los Santos de los Ultimos Días.
+            </p>
+            <br><br>
+            <h2 id="id22">CRISTO.</h2>
+            <p>
+                Ver ABOGADO, ADONAI, ALFA Y OMEGA, ALFARERO, AMEN, ANGEL, APOSTOL, ASCENSION DE CRISTO, AUTOR DE
+                SALVACION, BLASFEMIA, BUEN PASTOR, CAIDA DE ADAN, CANCION DEL CORDERO, CELOSO, CENA DE LAS BODAS DEL
+                CORDERO, COHEREDEROS CON CRISTO, CONSEJERO, CORDERO DE DIOS, CREADOR, CRISTO COMO EL PADRE, CRISTO NIÑO,
+                CRISTIANDAD, CRISTIANISMO, CRISTIANOS, CRUCIFICADO, CRUCIFIXION, CRUZ, DEFENSA, DESCANSO DEL SEÑOR,
+                DESEADO DE TODAS LAS NACIONES, DIOS, DIOS DE ABRAHAM, ISAAC Y JACOB; DIOS DE BATALLAS, DIOS DE DIOSES,
+                DIOS DE ISRAEL, DIOS DE JESURUN, DIOS DE LA NATURALEZA, DIOS DE LOS ESPIRITUS, DIOS DE TODA LA TIERRA,
+                DIOS DE VERDAD, DIOS TODOPODEROSO, DOCTRINA DE EXPIACION DE SANGRE, EL CAMINO, LA VERDAD Y LA VIDA; EL
+                ELEGIDO, EL JUSTO, ELIAS, EMMANUEL, ERA CRISTIANA, ESPIRITU DE VERDAD, ESPIRITU SANTO, ESPOSA DEL
+                CORDERO, ESPOSO, ESTRELLA RESPLANDECIENTE DE LA MAÑANA, <a href="#id21">EVANGELIO</a>, EXALTACION,
+                EXPIACION, EXPIADOR,
+                <a href="#id23">EXPIACION DE CRISTO</a>, FALSOS CRISTOS, FE, GALILEO, GOBERNADOR, GRAN YO SOY, GUARDIAN
+                DE LA PUERTA,
+                HEREDERO DE DIOS, HERMANO MAYOR, HIJO AMADO, HIJO AHMAN, CARPINTERO HIJO DEL, HIJO DE DAVID, HIJO DE
+                DIOS, HIJO DE ¡OSE, HIJO DEL HOMBRE, HIJO DE MARÍA, HIJO DE JUSTICIA, HIJO DEL PADRE ETERNO, HIJO DEL
+                ALTISIMO, HIJ0 DEL DIOS ETERNO, HIJO DEL DIOS VIVIENTE, HOMBRE AUSTERO, IGLESIA DE JESUCRISTO DE LOS
+                SANTOS DE LOS ULTIMOS DIAS, 1NTERCESION, INTERCESOR, JAH, JEHOVA, JEHOVA JUSTICIA NUESTRA, JESUS, JESUS
+                DE NAZARET, JUEZ DE TODA LA TIERRA, JUSTIFICACION, LEON DE LA TRIBU DE JUDA, LEGISLADOR, LEY, LLAVE DE
+                DAVID, LOCOS, LUZ DE CRISTO, LUZ DE VIDA, LUZ DEL MUNDO, MAESTRO, MANA, MARIA, MEDICION, MEDIADOR,
+                MELQUISEDEC, MENSAJERO, MENSAJERO ANTE EL SEÑOR, MENSAJERO DE SALVACION, MENSAJERO DEL CONVENIO, MESIAS,
+                MESIANICO, MINISTRO DE SALVACION, MOISES, NACIMIENTO VIRGINAL, NAVIDAD, NAZARENO, NIÑO DE BELEN, NOMBRE
+                DE CRISTO, NUESTRO SEÑOR, OBISPO, OMEGA, OMNIPOTENCIA, OMNIPRESENCIA, OMNISCIENCIA, PADRE EN LOS CIELOS,
+                PALABRA DE DIOS, PAN DE VIDA, PARABOLAS, PASION DE CRISTO, PERSONIFICACION, PIEDRA DE ISRAEL, PLAN DE
+                SALVACION, POTESTAD, PREEXISTENCIA, PRIMERO Y ULTIMO, PRIMOGENITO, PRINCIPIO Y FIN, PRINCIPE DE PAZ,
+                PRINCIPE DE SALVACION, PRINCIPE DEL EJERCITO DE JEHOVA, PROFECIAS MESIÁNICAS, PROFETA, PROFETA DEL
+                ALTISIMO, PROFETAS, PROPICIACION, PROPICIADOR, PUERTA DE LAS OVEJAS, PURIFICACION, QUETZALCOATL, RABI,
+                RAIZ DE DAVID, RAMA, RECONCILIADOR, RE- DENCION, REDENTOR, REFINADOR, RESTAURADOR, RESURRECCION Y LA
+                VIDA, REY, REY DE GLORIA, REY DE LOS CIELOS, REY DE ISRAEL, REY DE REYES, REY DE LOS JUDIOS, REY DE
+                SION, ROCA DEL CIELO, SALVACION, SALVADOR, SANTIFICACION, SANTO, SANTO MESIAS, SANTO DE ISRAEL, SANTO DE
+                JACOB, SANTO DE SION, SEGUNDO ADÁN, SEGUNDA VENIDA DE CRISTO, SEÑOR, SEÑOR DIOS, SEÑOR DE GLORIA, SEÑOR
+                DE LOS EJERCITOS, SEÑOR DE SEÑORES, SEÑOR DEL DIA DE REPOSO, SEÑOR DE LA COSECHA, SEÑOR DE LA VIÑA,
+                SEÑOR OMNIPOTENTE, SEÑOR RESUCITADO, SEÑAL DE DONAS, SEÑAL DE LA CRUZ, SERPIENTE DE BRONCE, SIERVO,
+                SIMBOLISMOS, SIMIENTE DE CRISTO, SUMO SA- CERDOTE, TESTADOR, EPIFANIA, TRONCO DE ISAI, UNIGENITO,
+                VERDAD, VIDA ETERNA, VIÑA VERDADERA, YAHVE, YUGO DE CRISTO. En lo que concierne al hombre, todo está
+                entrado en Cristo, Es el Primogénito del Padre. Por su obediencia y devoción a la verdad alcanzó el
+                pináculo de la inteligencia que lo elevó al grado de Dios, como el Señor Omnipotente, mientras estaba
+                aún en su estado preexistente. Como tal, llegó a ser, bajo el Padre, el Creador de esta tierra y de
+                mundos innumerables; y entonces fue elegido para llevar a cabo la expiación infinita y eterna, venir a
+                esta tierra en particular como Hijo literal del Padre y poner en marcha todo el plan de redención,
+                salvación y exaltación.
+                <br><br>
+                A través de él el evangelio, todas las verdades salvadoras y todos los edificantes principios que han
+                sido revelados en todos los tiempos. Él es el Eterno Jehová, el Mesías prometido, el Redentor y
+                Salvador, el Camino, la Verdad y la Vida. Por él la in- mortalidad y vida eterna se convierten en
+                realidad y por su gracia y bondad es posible la salvación para todos los que creen y obedecen. Nació en
+                este mundo como Hijo de María (heredando de El los poderes de la mortalidad) y como el Hijo del Hombre
+                de Santidad (heredando de El los poderes de la inmortalidad). En esta vida no recibió la plenitud desde
+                el principio, sino que creció gracia por gracia hasta que, en el triunfo final de la resurrección, ganó
+                la plenitud de todas las cosas; y le fue dado todo poder tanto en el cielo como en la tierra. Tiene toda
+                verdad, poder, dominio y conocimiento; comprende todas las cosas, es infinito en todos sus atributos y
+                poderes; y ha dado una ley a todas las cosas. Cuando sea el tiempo el vendrá otra vez, en poder, dominio
+                y gloria para reinar con hombres justos sobre la tierra por mil años. Y a partir de allí reinará con lo
+                santos justos por toda la eternidad como Rey de Reyes, Señor de Señores, y Dios de Dioses. A su santo
+                nombre, ahora y por siempre sean la honra y honor, poder, riquezas y dominio y una eterna plenitud de
+                todas las cosas por toda la eternidad. Si el mundo sectario o aún los espiritualmente no iluminados de
+                la Iglesia, tuvieran el menor concepto del dominio, exaltación y preeminencia de nuestro Señor tanto en
+                la preexistencia, durante su ministerio mortal, como ahora en que ha vuelto a su Padre, les parecería
+                poco menos que terrible o una blasfemia presuntuosa. Las palabras escritas o dichas no pueden transmitir
+                tal comprensión; puede venir solamente por revelación del espíritu. Esta obra sobre Doctrina Mormona
+                trata, de manera fragmentaria sobre él, sus leyes y su doctrina. Más de 200 artículos divididos con
+                referencias cruzadas, bajo el título de Cristo, trata brevemente sobre sus nombres, ministerio, misión y
+                posición exaltada en el eterno esquema de las cosas.
+            </p>
+            <br><br>
+            <h2 id="id23">EXPIACION DE CRISTO.</h2>
+            <p>
+                Ver ABOGADO, DOCTRINA DE LA EXPIACION POR SANGRE, <a href="#id22">CRISTO</a>, VIDA ETERNA, EXPIACION,
+                EXPIADOR, CAIDA DE
+                ADAN, EVANGELIO, GRACIA DE DIOS, INMORTALIDAD, INTERCESION, MEDIACION, PROPICIA- CION, PROPICIADOR,
+                RECONCILIACION, RECONCILIADOR, REDENCION, ARREPENTIMIENTO, SACRIFICIOS, SALVACION, SALVACION POR GRACIA,
+                SIMBOLISMO. Nada, en todo el plan de salvación, se compara de alguna manera en importancia, con el más
+                trascendental de los sucesos: el sacrificio expiatorio de nuestro Señor. Es la única cosa más importante
+                que haya sucedido en toda la historia de las cosas creadas; es la piedra fundamental sobre la que
+                descansa el evangelio y todas las otras cosas; por cierto, todas "las otras cosas que pertenecen a
+                nuestra religión son únicamente dependencias de esto, " dijo el Profeta. (Enseñanzas, pág. 141.) La
+                doctrina de la Expiación abarca, sostiene, apoya y da vida y fuerza a todas las otras doctrinas del
+                evangelio. Es la base sobre la cual descansa toda la verdad, y todas las cosas crecen de ella y vienen
+                por causa de ella. Pero cierto la expiación es el evangelio. Recordando la visión el Profeta escribió :
+                "Y éste es el evangelio, las buenas nuevas, que la voz de los cielos nos testificó: -Que vino al mundo,
+                y para santificarlo y limpiarlo de toda injusticia; para que por él pudieran ser salvos todos aquellos a
+                quienes el Padre había puesto en su poder y hecho por él;' (D. Y C. 76: 40-42.) El Señor resucitado
+                habló a los nefitas en forma similar: "He aquí, os he dado mi evangelio, y éste es el evangelio que os
+                he dado -que vine al mundo a cumplir la voluntad de mi Padre, porque mi Padre me envió. Y mi Padre me
+                envió para que fuese levantado sobre la cruz."( 3 Ne. 27:13-14.)
+                <br><br>
+                La salvación viene por la expiación. Sin ella el propio plan de salvación se frustraría y todo el
+                propósito tras la creación se reduciría a nada. Con ella avanzarán los propósitos eternos del Padre; el
+                propósito de la creación es preservado, el plan de salvación es hecho eficazmente, y los hombres de aquí
+                en adelante estarán seguros de una esperanza de la mayor exaltación (Doctrina de Salvación vol. 1 Pág.
+                116-133) "La redención viene en y por medio del Santo Mesías" enseñó Lehi, "porque él es lleno de gracia
+                y de verdad. He aquí, él se ofrece a sí mismo en sacrificio por el pecado, para satisfacer las demandas
+                de la ley, por todos los de corazón quebrantando y de espíritu contrito; y por, nadie más responde ante
+                los requerimientos de la ley. Por lo tanto, cuán grande es la importancia de dar a conocer estas cosas a
+                los habitantes de la tierra, para que sepan que ninguna carne puede morar en la presencia de Dios, sino
+                por medio de los méritos, y misericordia, y gracia del Santo Mesías, quien da su vida, según la carne, y
+                la toma por el poder del Espíritu, para poder efectuar la resurrección de los muertos, siendo el primero
+                que ha de resucitar. De manera que él es las primicias para Dios, pues él intercederá por todos los
+                hijos de los hombres; y los que crean en él serán salvos." (2Ne. 2: 6-9).
+                <br><br>
+                Uno de los más grandes discursos de todos los tiempos, predicado por un ángel del cielo sobre el tema de
+                la expiación, incluye estas palabras: "Así como en Adán, o por na- turaleza, ellos caen, así también la
+                sangre de Cristo expía sus pecados. Y además, te digo que no se dará otro nombre, ni otra senda ni
+                medio, por el cual la salvación pueda llegar a los hijos de los hombres, sino en y por medio del nombre
+                de Cristo, el Señor Omnipotente. Porque el hombre natural es enemigo de Dios, y lo ha sido desde la
+                caída de Adán, y lo será para siempre jamás, a menos que se someta al influjo del Espíritu Santo, y se
+                despoje del hombre natural, y se haga santo por la expiación de Cristo el Señor, y se vuelva como un
+                niño; sumiso, manso, humilde, paciente, lleno de amor y dispuesto a someterse a cuanto el Señor juzgue
+                conveniente imponer sobre él, tal como un niño se sujeta a su padre." (Mosíah 3: 16-19.)
+                <br><br>
+                Para una comprensión de la doctrina de la expiación es esencial un conocimiento de dos grandes verdades:
+                1. La caída de Adán ; y 2. La divina filiación de nuestro Señor. La caída de Adán trajo la muerte
+                espiritual y temporal al mundo. La muerte espiritual es ser desterrado de la presencia del Señor (2Ne.
+                9:6.) y morir en lo pertinente a cosas justas, o en otras palabras, cosas del Espíritu. (Hela. 14:
+                15-18.) Muerte temporal o muerte natural es la separación de cuerpo y espíritu; el cuerpo vuelve al
+                polvo del cual fue creado y el cuerpo al mundo de los espíritus a aguardar el día de la resurrección.
+                Expiar es rescatar, reconciliar, reparar, redimir, reclamar, absolver, propiciar, hacer enmiendas, pagar
+                el castigo. Así la expiación de Cristo es designada para rescatar a los hombres de los efectos de la
+                caída de Adán en que ambas muertes, espiritual y temporal son conquistadas. Su efecto duradero es
+                anulado; la muerte espiritual de la caída es reemplazada por la vida espiritual de la expiación, en que
+                todos los que creen y obedecen la ley del evangelio, ganan vida espiritual, o vida eterna -vida en la
+                presencia de Dios donde aquellos que la disfrutan están vivos para las cosas justas o cosas del
+                Espíritu. La muerte temporal de la caída es reemplazada por el estado de inmortalidad que viene por la
+                expiación y resurrección de nuestro Señor. El cuerpo y el espíritu sepa- rados, incidente que los
+                hombres llaman la muerte natural, son reunidos en inmortalidad en una corrección inseparable que nunca
+                permitirá nuevamente ver la corrupción. (Alma 11: 37-45: 12: 16-18). La Inmortalidad viene como un don
+                gratuito, por la gracia de Dios solamente, sin obras de justicia. La vida eterna es la recompensa por
+                "obediencia a las leyes y ordenanzas del evangelio". (Tercer artículo de Fe.)"Adán cayó para que los
+                hombres existiesen; y existen los hombres para que tengan gozo", dice Lehi. "Y el Mesías vendrá en la
+                plenitud de los tiempos, a fin de poder redimir a los hijos de los hombres de la caída." (2Ne.2: 25-26.)
+                "La expiación", el rey explica Benjamín, "fue preparada desde el principio del mundo para todo el género
+                humano que ha existido desde la caída de Adán, o que existe, o que existirá jamás hasta el fin del
+                mundo.( Mo- síah 4:7.)
+                <br><br>
+                Y Moroni enseñó: "Dios creó a Adán, y por Adán vino la caída del hombre. Y por causa de la caída del
+                hombre, vino Jesucristo, sí, el Padre y el Hijo; y a causa de Jesucristo vino la redención del hombre. Y
+                a causa de la redención del hombre, que vino por Jesucristo, son llevados de vuelta a la presencia del
+                Señor; sí, en esto son redimidos todos los hombres , porque la muerte de Cristo hace efectiva la
+                resurrección, la cual lleva a cabo una redención de un sueño eterno, del cual todos los hombres
+                despertarán por el poder de Dios cuando suene la trompeta; y saldrán, grandes así como pequeños, y todos
+                comparecerán ante su tribunal, redimidos y libres de esta ligadura eterna de la muerte, la cual es una
+                muerte temporal. Y entonces viene el juicio del Santo sobre ellos; y entonces es cuando el que es impuro
+                continuará siendo impuro; y el que es justo continuará siendo justo; el que es feliz permanecerá feliz y
+                el que es miserable será miserable todavía. (Morm. 9:12-14.)
+                <br><br>
+                Y así el Señor dice que por causa de la expiación, y siguiendo la muerte natural, el hombre es
+                resucitado "en inmortalidad a la vida eterna, sí, aún cuantos creyeren; y los que no creyeren a
+                condenación eterna; porque no pueden ser redimidos de su caída espiritual, debido a que no se
+                arrepienten. (D.& C. 29: 43-44.) Si no hubiera habido expiación de Cristo ( habiendo habido una caída de
+                Adán) entonces el propio plan y propósito relacionado con la creación del hombre habría fracasado. Si no
+                hubiera habido expiación, la muerte temporal habría permanecido para siempre, y jamás hubiera habido una
+                resurrección. E1 cuerpo se hubiera quedado para siempre en la tumba, y el espíritu hubiera permanecido
+                en una prisión espiritual por toda la eternidad. Si no hubiera habido expiación nunca habría habido vida
+                espiritual o eterna para ninguna persona. Ni los seres mortales ni los espirituales hubiesen sido
+                lavados del pecado y todas las huestes espirituales de los cielos hubieran sido perjudicados tal como
+                demonios, de ángeles a demonios, esto es, como hijos de perdición.
+                <br><br>
+                Jacob, hermano del justo Nefi, nos ha dejado estas inspiradas palabras -: "Porque así como la muerte ha
+                pasado sobre todos los hombres, para cumplir el misericordioso designio del Gran Creador, también es
+                menester que haya un poder de resurrección, y la resurrección debe venir al hombre por motivo de la
+                caída; y la caída vino a causa de la transgresión; y por haber caído el hombre, fue desterrado de la
+                presencia del Señor. Por tanto, es preciso que sea una expiación infinita, pues a menos que fuera una
+                expiación infinita, esta corrupción no podría revestirse de incorrupción. De modo que el primer juicio
+                que vino sobre el hombre tendría que haber permanecido infinitamente y siendo así, esta carne tendría
+                que descender para pudrirse y desmenuzarse en su madre tierra, para no levantarse jamás. ¡Oh, la
+                sabiduría de Dios, Su misericordia y gracia! Porque he aquí, si la carne no se levantara más, nuestros
+                espíritus tendrían que estar sujetos a ese ángel que cayó de la presencia del Dios Eterno, y se
+                convirtió en el diablo, para no levantarse más. Y nuestros espíritus habrían llegado a ser como él, y
+                nosotros seríamos diablos, ángeles de un diablo, para ser separados de la presencia de nuestro Dios y
+                permanecer con el padre de las mentiras, en miseria como él." (2Ne. 9: 6-9: D.& C. 29: 39-41.) Los niños
+                y los que no han llegado a la edad de la responsabilidad son automáticamente salvos en el reino
+                celestial en virtud de la expiación. "Los niños pequeños son sanos, porque son incapaces de cometer
+                pecado;" dice el Señor, por tanto, la maldición de Adán les es quitada en mí, de modo que no tiene poder
+                sobre ellos: (Mo- ro. 8: 8: D. Y C. 29: 46-50; Mosíah 15:25: Enseñanzas, pág. 125.) La maldición de Adán
+                incluye ambas muertes, la temporal y la espiritual, y de acuerdo a esto ninguna de esas es valedera
+                sobre los niños y sobre aquellos que no tienen "entendimiento" (D.& C.29: 50), esto es, inmortalidad y
+                vida eterna.
+                <br><br>
+                Cristo es la única persona nacida alguna vez en el mundo, que tuvo poder para realizar la resurrección
+                de sí mismo o de cualquiera y de expiar los pecados de todo ser viviente. Esto es porque él tuvo vida en
+                sí mismo: él tuvo el poder de la inmortalidad por herencia divina. La expiación vino por el poder de
+                Dios y no del hombre, y para entenderlo, uno debe creer que nuestro Señor fue literalmente el Hijo de
+                Dios (un personaje inmortal) y de María (una mujer mortal). De su madre él heredo la mortalidad, el
+                poder de sacrificar su vida, de morir, de permitir que el cuerpo y el espíritu se separa- ran, el poder
+                de unirlos nuevamente en el estado de resurrección. Este poder él lo ejerció, llegando a ser las
+                primicias de los que dormían, y en una forma incomprensible para el hombre mortal, él tuvo el poder de
+                pasar los efectos de esta resurrección a todas las criaturas vivientes. "Yo pongo mi vida para volverla
+                a tomar", dijo "nadie me la guita, sino que yo de mi mismo la pongo. Tengo poder para ponerla y tengo
+                poder para volverla a tomar. Este mandamiento recibí de mi Padre." (Juan 10: 17-18.) Amulek dio este
+                testimonio: "Yo sé que Cristo vendrá entre los hijos de los hombres para tomar sobre sí las
+                transgresiones de su pueblo, y que expiará los pecados del mundo, porque Dios el Señor lo ha dicho.
+                Porque es necesario que se realice una expiación; o de lo contrario, todo el género humano
+                inevitablemente deberá perecer; sí, todos se han obstinado; sí, todos han caído y están perdidos, y, de
+                no ser por la expiación que es necesario que se haga, deben perecer. Porque es preciso que haya un gran
+                y postrer sacrificio; sí, no ¡in sacrificio de hombre, ni de bestia, ni de ningún género de ave, pues no
+                será ¡in sacrificio humano, sino debe ser un sacrificio infinito y eterno. Y no hay hombre alguno que
+                pueda sacrificar su propia sangre, la cual expiará los pecados de otro... Por tanto, no hay nada que no
+                sea una expiación infinita que pueda responder por los pecados del mundo."(Alma 34: 8-12.)
+                <br><br>
+                Cuando los profetas hablan de una infinita expiación, ello significa precisamente esto. Sus efectos
+                cubren a todos los hombres, la tierra misma y todas las formas de vida sobre ella, y alcanzan los
+                espacios sin fin de la eternidad. La palabra "expiación," está escrita en el Compendium, y significa
+                "redención a través del ofrecimiento de un rescate, de un castigo por una ley quebrada." El sentido está
+                expresado en Job 33: 24: "Que lo libró de descender al sepulcro, que halló redención." Efectuada por
+                Jesucristo, significa la redención de la tierra y todas las cosas pertenecientes a ella a través de su
+                muerte y resurrección, del poder que dicha muerte ha obtenido sobre ellos a través de la transgresión de
+                Adán ...Redención de la muerte, a través de los sufrimientos de Cristo, es para todos los hombres, los
+                justos y los malvados; para esta tierra y para todas las cosas creadas sobre ella." (Compendium Págs.
+                8-9.)causa de la expiación y por obediencia a la ley del Evangelio, los hombres tienen el poder de
+                llegar a ser hijos de Dios porque ellos son espiritualmente engendrados por Dios y adoptados como miem-
+                bros de su familia. Ellos llegan a ser los hijos de Dios y coherederos con Cristo de la plenitud del
+                Reino del Padre. (D.& C.39:1-6; 76:54-60; Rom. 8: 14-17; Gal. 3:1-7; 1 Juan 3:1-4; Apo. 21: 7.) Ahora,
+                la jurisdicción y el poder de nuestro Señor se extienden más allá de los límites de esta pequeña tierra
+                en la cual nosotros moramos; El es, por debajo del Padre, el Creador de innumerables mundos (Moisés 1:
+                33) y a través del poder de su expiación los habitantes de estos mundos, dice la revelación, "son
+                engendrados hijos e hijas para Dios", (D.& C. 76:24) lo que significa que la expiación de Cristo siendo
+                literal y verdaderamente infinita, se aplica para un infinito número de mundos.
+                <br><br>
+                Aquellos que tienen oídos para oír, encuentran enseñada esta doctrina en la siguiente escritura: "Y
+                vimos la gloria del Hijo, a la diestra del Padre, y recibimos de su plenitud" dice el Profeta,
+                recordando la visión, "y vimos a los Santos Ángeles y a los que son santificados delante de su trono,
+                adorando a Dios y al Cordero, y lo adoran para siempre jamás. Y ahora, después de los muchos testimonios
+                que han dado de él, éste es el testimonio, el último de todos, que nosotros damos de él: ¡Que vive!
+                Porque lo vimos, sí, a la diestra de Dios; y oímos la voz testificar que él es el Unigénito del Padre
+                -que por él por medio de él y de él los mundos son y fueron creados y sus habitantes son engendrados
+                hijos e hijas para Dios ." ( D.& C. 76: 20-24.) En adición al fácil significado de este pasaje tenemos
+                de ello una explicación dada por el Profeta José Smith.
+                <br><br>
+                El parafraseó en poética rima, el registro completo de la Visión, y sus palabras,
+                cubriendo este fragmento fueron:
+                <br><br>
+                "Yo contemplo alrededor del trono
+                <br>
+                santos ángeles y huestes,
+                <br>
+                Y seres santificados que en
+                <br>
+                otros mundos han estado,
+                <br>
+                En santa adoración a
+                <br>
+                Dios y al Cordero,
+                <br>
+                Por siempre y para siempre
+                <br>
+                Amén y amén.
+                <br>
+                Y ahora, después de todas
+                <br>
+                las evidencias hechas de él,
+                <br>
+                por testigos verdaderos,
+                <br>
+                por quienes él fue conocido,
+                <br>
+                ésta es la mía la última de todas,
+                <br>
+                que él vive: si, él vive!
+                <br>
+                Y se sienta a la diestra de Dios en su trono."
+                <br>
+                Y yo oí una gran voz
+                <br>
+                portando registro del cielo,
+                <br>
+                El es el Salvador y el
+                <br>
+                Unigénito de Dios;
+                <br>
+                por él, de él y a través de él,
+                <br>
+                los mundos fueron todos hechos,
+                <br>
+                Aún todos aquellos que yacen
+                <br>
+                en los cielos tan espaciosos.
+                <br>
+                "Cuyos habitantes, también,
+                <br>
+                del primero al último,
+                <br>
+                son salvos por el propio
+                <br>
+                Salvador nuestro
+                <br>
+                y por supuesto son engendrados
+                <br>
+                hijos e hijas de Dios
+                <br>
+                por las mismas propias verdades y
+                <br>
+                los mismos propios poderes.
+                <br>
+                "(MillenialStar,vol.4págs. 49-55.)
+            </p>
+            <br><br>
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+</body>
+
+</html>
